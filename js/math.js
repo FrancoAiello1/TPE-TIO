@@ -70,3 +70,9 @@ function suma() {
 	let sumado = document.getElementById("suma").innerHTML;
 	document.getElementById('resultado').innerHTML = actual + sumado
 }
+
+function resta() {
+	let actual = document.getElementById('resultado').innerHTML;
+	let sumado = document.getElementById("resta").innerHTML;
+	document.getElementById('resultado').innerHTML = actual + sumado
+}
