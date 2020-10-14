@@ -82,3 +82,9 @@ function division() {
 	let sumado = document.getElementById("division").innerHTML;
 	document.getElementById('resultado').innerHTML = actual + sumado
 }
+
+function multiplicacion() {
+	let actual = document.getElementById('resultado').innerHTML;
+	let sumado = document.getElementById("multiplicacion").innerHTML;
+	document.getElementById('resultado').innerHTML = actual +  sumado
+}
