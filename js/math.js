@@ -76,3 +76,9 @@ function resta() {
 	let sumado = document.getElementById("resta").innerHTML;
 	document.getElementById('resultado').innerHTML = actual + sumado
 }
+
+function division() {
+	let actual = document.getElementById('resultado').innerHTML;
+	let sumado = document.getElementById("division").innerHTML;
+	document.getElementById('resultado').innerHTML = actual + sumado
+}
