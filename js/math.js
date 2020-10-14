@@ -64,3 +64,20 @@ function n0() {
 	let sumado = document.getElementById("n0").innerHTML;
 	document.getElementById('resultado').innerHTML = actual + sumado
 }
+function suma() {
+	let actual = document.getElementById('resultado').innerHTML;
+	let sumado = document.getElementById("suma").innerHTML;
+	document.getElementById('resultado').innerHTML = actual + sumado
+}
+
+function resta() {
+	let actual = document.getElementById('resultado').innerHTML;
+	let sumado = document.getElementById("resta").innerHTML;
+	document.getElementById('resultado').innerHTML = actual + sumado
+}
+
+function division() {
+	let actual = document.getElementById('resultado').innerHTML;
+	let sumado = document.getElementById("division").innerHTML;
+	document.getElementById('resultado').innerHTML = actual + sumado
+}
