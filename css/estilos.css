@@ -1,33 +1,29 @@
 * {
 	padding: 0px;
-	
 	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
 }
-
 
 .contenedor{
 	background-color: #e2e2e2;
 	width: fit-content;
 	margin: auto;
-	
-}
-
-.teclas{
-    display: flex;
-    flex-direction: inherit;
-   
-}
-
-.pantalla {
-	padding: 18px 18px 0px 18px;
 }
 
 .numeros {
 	padding: 22px 8px 16px 37px;;
 }
+
 .operaciones {
-    padding: 19px 24px 22px 16px;
-   
+    padding: 19px 24px 22px 16px;  
+}
+
+.teclas{
+    display: flex;
+    flex-direction: inherit; 
+}
+
+.pantalla {
+	padding: 18px 18px 0px 18px;
 }
 
 #resultado {
