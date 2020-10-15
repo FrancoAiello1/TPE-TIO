@@ -64,7 +64,10 @@ function n0() {
 	let sumado = document.getElementById("n0").innerHTML;
 	document.getElementById('resultado').innerHTML = actual + sumado
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> f0c56746df06546dab42cad9977af133d4d03246
 function suma() {
 	let actual = document.getElementById('resultado').innerHTML;
 	let sumado = document.getElementById("suma").innerHTML;
@@ -81,6 +84,8 @@ function division() {
 	let actual = document.getElementById('resultado').innerHTML;
 	let sumado = document.getElementById("division").innerHTML;
 	document.getElementById('resultado').innerHTML = actual + sumado
+<<<<<<< HEAD
+=======
 }
 
 function multiplicacion() {
@@ -115,4 +120,5 @@ function showResult() {
 		document.getElementById("resultado").innerHTML = res;
 		
 	}
+>>>>>>> f0c56746df06546dab42cad9977af133d4d03246
 }
