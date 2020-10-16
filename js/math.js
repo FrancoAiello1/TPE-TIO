@@ -139,3 +139,74 @@ function cuadrado() {
 function raiz() {
 	let actual = document.getElementById('resultado').innerHTML;
 	document.getElementById('resultado').innerHTML = "√" + actual;
+}
+
+function dosElevado() {
+	let actual = document.getElementById('resultado').innerHTML;
+	document.getElementById('resultado').innerHTML = "2 " + "⇑" + actual;
+}
+
+function limpiar() {
+	let actual = document.getElementById('resultado').innerHTML = "";
+}
+
+function showResult() {
+	let actual = document.getElementById('resultado').innerHTML;
+
+	try {
+		let res = eval(actual);
+		document.getElementById("resultado").innerHTML = res;
+	} catch (error) {
+
+		let fact = actual.indexOf("!");
+		let squared = actual.indexOf("²");
+		let raiz = actual.indexOf("√");
+		let dosElevado = actual.indexOf("⇑");
+
+		if (fact !== -1) {
+			let unifiedString = unifyStrings(actual, 0, fact);
+
+			console.log(unifiedString);
+			//ciclo del factorial
+			let numero = parseInt(unifiedString);
+			let total = 1;
+			for (i = 1; i <= numero; i++) {
+				total = total * i;
+			}
+
+			document.getElementById("resultado").innerHTML = total;
+
+		} else if (squared !== -1) {
+
+			let unifiedString = unifyStrings(actual, 0, squared);
+			let numero = parseInt(unifiedString);
+
+			document.getElementById("resultado").innerHTML = Math.pow(numero, 2);
+
+
+		} else if (raiz !== -1) {
+
+			let unifiedString = unifyStrings(actual, raiz + 1, actual.length);
+
+			document.getElementById("resultado").innerHTML = Math.sqrt(parseInt(unifiedString));
+
+		} else if (dosElevado !== -1) {
+
+			let unifiedString = unifyStrings(actual, dosElevado + 1, actual.length);
+
+			console.log(unifiedString);
+
+			document.getElementById("resultado").innerHTML = Math.pow( 2, parseInt(unifiedString));
+
+		}
+	}
+
+	function unifyStrings(string, start, end) {
+		let unifiedNumber = string[start];
+
+		for (let i = start + 1; i < end; i++) {
+			unifiedNumber += string[i];
+		}
+		return unifiedNumber;
+	}
+}
