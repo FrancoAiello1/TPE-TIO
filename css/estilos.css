@@ -75,3 +75,14 @@ button {
 	font-size: 50px;
 	padding: 0px;
 }
+.operaciones2 div{
+    text-align: center;
+}
+.operaciones2 button{
+	width: 86px;
+    height: 61px;
+    padding: 10px 15px;
+	background-color: #000;
+	color: rgb(51, 205, 243);
+	border: none;
+}
