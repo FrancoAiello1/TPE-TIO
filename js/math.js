@@ -196,7 +196,7 @@ function showResult() {
 
 			console.log(unifiedString);
 
-			document.getElementById("resultado").innerHTML = Math.pow( 2, parseInt(unifiedString));
+			document.getElementById("resultado").innerHTML = Math.pow(2, parseInt(unifiedString));
 
 		}
 	}
